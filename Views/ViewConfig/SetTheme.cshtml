@@ -1,0 +1,10 @@
+﻿@* Views/ViewConfig/SetTheme.cshtml *@
+@model form_TP.ViewModels.SetThemeVM
+
+<form asp-action="SetTheme" method="post">
+    <select asp-for="Theme">
+        <option value="light">Light</option>
+        <option value="dark">Dark</option>
+    </select>
+    <button type="submit">Apply</button>
+</form>

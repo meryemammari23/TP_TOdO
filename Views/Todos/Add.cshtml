@@ -1,0 +1,12 @@
+﻿@* Views/Todos/Add.cshtml *@
+@model form_TP.ViewModels.TodoAddVM
+
+<form asp-action="Add" method="post">
+    <input asp-for="Label" />
+    <span asp-validation-for="Label"></span>
+    <button type="submit">Add</button>
+</form>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

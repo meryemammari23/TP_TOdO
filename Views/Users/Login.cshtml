@@ -1,0 +1,12 @@
+﻿@* Views/Users/Login.cshtml *@
+@model form_TP.ViewModels.LoginVM
+
+<form asp-action="Login" method="post">
+    <input asp-for="Username" />
+    <span asp-validation-for="Username"></span>
+    <button type="submit">Login</button>
+</form>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}
